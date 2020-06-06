@@ -1,0 +1,99 @@
+body{
+	background-color: #F8F4E3;}
+nav{
+	background-color: #DCC48E;
+	border: #2A2B2A;}
+nav a{
+    color: #706C61;}
+nav a:hover{
+	color: #2A2B2A;}
+.active{
+	color: #505168;}
+label{
+	font-family: Palatino, serif;
+	text-align: justify;}
+section{
+	border-radius: 10px;}
+section:nth-child(1){
+	background-color: #B3C0A4;}
+section:nth-child(2){
+	background-color: #C6C5B9;}
+section:nth-child(3){
+	background-color: #F5DBCB;}
+section:nth-child(4){
+	background-color: #9DBEBB;}
+div img{
+	display: inline-block;
+	margin: 30px;}
+button{
+	display: inline-block;
+	border: #ffffff00 solid 2px;
+	background-color: #ffffff00;
+	margin-bottom: 0px;}
+main{
+	flex-direction: column;}
+#pic{
+		display: flex;
+		justify-content: center;
+		height: auto;
+		position: absolute;}
+
+@media all and (max-width: 980px){
+	section{
+		width: 90vw;
+	    margin: 3vw;
+	    padding: 2vw;}
+    p{
+	    font-size: 3vw;
+	    line-height: 4vw;}
+	label{
+		font-size: 3.5vw;
+	    line-height: 4vw;}
+	#pic{
+		width: 90vw;}
+	button{
+		width: 40vw;
+	    height: 80vw;
+    	position: absolute; top: 4vw;}
+    #back{
+		position: absolute; right: 45vw;}
+	#forward{
+		position: absolute; left: 45vw;}
+	div img{
+	    width: 80vw;
+	    height: 80vw;}
+    .hide{
+        display: none;}
+    .hide + label ~ div{
+        display: none;}
+    .hide + label{
+        cursor: pointer;
+        display: inline-block;}
+    .hide:checked + label + div {
+        display: block;
+        height: 30%;}
+}
+
+@media all and (min-width: 981px){
+	label{
+		font-size: 1.5vw;}
+	section{
+		margin: 3vw;
+		padding: 2vw;
+		width: 60vw;}
+	#pic{
+		width: 60vw;}
+	button{
+		width: 20vw;
+	    height: 40vw;
+	    position: absolute; top: 5vh;}
+	#back{
+		position: absolute; right: 30vw;}
+	#forward{
+		position: absolute; left: 30vw;}
+	div img{
+	    width: 40vw;
+        height: 40vw;}
+    input{
+        display: none;}
+}

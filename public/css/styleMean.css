@@ -1,0 +1,64 @@
+body{
+	background-color: #C9E4CA;}
+nav{
+	background-color: #87BBA2;
+	border: #3B6064;}
+nav a{
+    color: #4d6271;}
+nav a:hover{
+	color: #364958;}
+.active{
+	color: #55828B;}
+
+@media all and (max-width: 980px){
+    p{
+	    font-size: 4vw;
+	    line-height: 5vw;
+	    display: block;}
+	main{
+		flex-direction: column;
+	    justify-content: space-around;}
+	#meaning{
+	    width: 90vw;
+	    height: 45vh;
+	    margin: 3vw;
+	    padding: 3vw;}
+    #buttons{
+    	width: 90vw;
+    	height: 70vw;
+    	padding: 0vw;
+    	margin: 0vw 4vw 0vw 4vw;
+    }
+	img{
+		width: 7.3vw;
+		height: 70vw;
+		margin: 0vw;
+		padding: 0vw;}
+}
+
+@media all and (min-width: 981px){
+	main{
+		flex-direction: row;
+		justify-content: space-around;
+	    padding: 0vw;
+	    margin: 1vw;}
+	#meaning{
+	    width: 30vw;
+	    height: 60vh;
+	    float: left;
+	    margin-right: 1vw;}
+	#buttons{
+		transform: rotate(270deg);
+		width: 70vh;
+		height: 30vw;
+		float: right;}
+	img{
+		width: 2.7vw;
+		height: 28vw;
+	    margin: 0vw;
+		padding: 0vw;}
+	p{
+	    font-size: 1.5vw;
+	    line-height: 2vw;
+	    display: block;}
+	}

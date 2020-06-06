@@ -1,0 +1,55 @@
+body{
+	background-color: #E8D2AE;}
+nav{
+	background-color: #D7B29D;
+	border: #796465;}
+nav a{
+    color: #805546;}
+nav a:hover{
+	color: #54382e;}
+.active{
+	color: #5f5b5a;}
+section:nth-child(odd){
+	background-color: #e2b0b2;}
+section:nth-child(even){
+	background-color: #DDE8B9;}
+section{
+	border-radius: 10px;}
+.example{
+	font-family: Palatino, cursive;
+	text-align: justify;
+	display: inline-block;
+	width: 50vw;}
+main{
+	flex-direction: column;
+	justify-content: space-around;}
+section{
+	display: flex;
+	flex-direction: column;}
+div{
+	display: flex;}
+
+@media all and (max-width: 980px){
+	section{
+		margin: 3vw;
+		padding: 2vw;}
+    section img{
+	    width: 30vw;
+	    height: 30vw;
+	    margin: 3vw;
+	    padding: 2vw;}
+}
+
+@media all and (min-width: 981px){
+	main{
+		flex-direction: column;
+		justify-content: space-around;}
+	section{
+	    width: 60vw;
+	    margin: 1vw;
+		padding: 2vw;}
+	section img{
+	    width: 12vw;
+	    height: 12vw;
+	    margin: 2vw;}
+}
